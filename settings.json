@@ -4,111 +4,112 @@
     "terminal.integrated.fontSize": 14,
     "workbench.colorTheme": "Solarized Dark",
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.bracketPairColorization.enabled": false,
     "editor.rulers": [
         98
     ],
-    "[elixir]": {
-        "editor.tokenColorCustomizations": {
-            "[Solarized Dark]": {
-                "textMateRules": [
-                    {
-                        "scope": "variable.other.readwrite",
-                        "settings": {
-                            "foreground": "#7dcfcd",
-                        }
-                    },
-                    {
-                        "scope": "entity.name.type.module.elixir",
-                        "settings": {
-                            "foreground": "#268BD2",
-                        }
-                    },
-                    {
-                        "scope": "entity.name.function.call",
-                        "settings": {
-                            "foreground": "#a8b9bc",
-                        }
-                    },
-                    {
-                        "scope": "comment.documentation.heredoc.elixir",
-                        "settings": {
-                            "foreground": "#2ca028"
-                        }
-                    },
-                    {
-                        "scope": [
-                            "variable.other.readwrite.module.elixir",
-                            "punctuation.definition.variable",
-                            "variable.other.constant"
-                        ],
-                        "settings": {
-                            "foreground": "#ddc448"
-                        }
-                    },
-                    {
-                        "scope": "keyword.control.elixir",
-                        "settings": {
-                            "fontStyle": "bold"
-                        }
-                    },
-                    {
-                        "scope": "meta.embedded",
-                        "settings": {
-                            "foreground": "#3befe0"
-                        }
-                    },
-                    {
-                        "scope": [
-                            "punctuation.definition.map.elixir",
-                            "punctuation.section.scope.elixir"
-                        ],
-                        "settings": {
-                            "foreground": "#91db37"
-                        }
-                    },
-                    {
-                        "scope": "punctuation.section.embedded.elixir",
-                        "settings": {
-                            "foreground": "#4dbeff"
-                        }
-                    },
-                    {
-                        "scope": "punctuation.section.array.elixir",
-                        "settings": {
-                            "foreground": "#9682e4"
-                        }
-                    },
-                    {
-                        "scope": "punctuation.section.function.elixir",
-                        "settings": {
-                            "foreground": "#4dbeff"
-                        }
-                    },
-                    {
-                        "scope": "constant.numeric.elixir",
-                        "settings": {
-                            "foreground": "#df61d5",
-                        }
-                    },
-                ]
-            },
-        },
-        "workbench.colorCustomizations": {
-            "[Solarized Dark]": {
-                "editorBracketHighlight.foreground1": "#4dbeff",
-                "editorBracketHighlight.foreground2": "#e4e411",
-                "editorBracketHighlight.foreground3": "#bd8aff"
-            }
-        },
-        "editor.bracketPairColorization.enabled": true,
-        "editor.language.colorizedBracketPairs": [
-            [
-                "(",
-                ")"
+    "editor.tokenColorCustomizations": {
+        "[Solarized Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "variable.other.readwrite.elixir",
+                    "settings": {
+                        "foreground": "#7dcfcd",
+                    }
+                },
+                {
+                    "scope": "entity.name.type.module.elixir",
+                    "settings": {
+                        "foreground": "#268BD2",
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.function.call.dot.elixir",
+                        "entity.name.function.call.local.elixir"
+                    ],
+                    "settings": {
+                        "foreground": "#a8b9bc",
+                    }
+                },
+                {
+                    "scope": "comment.documentation.heredoc.elixir",
+                    "settings": {
+                        "foreground": "#2ca028"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.readwrite.module.elixir",
+                        "punctuation.definition.variable.elixir",
+                        "variable.other.constant.elixir"
+                    ],
+                    "settings": {
+                        "foreground": "#ddc448"
+                    }
+                },
+                {
+                    "scope": "keyword.control.elixir",
+                    "settings": {
+                        "fontStyle": "bold",
+                        "foreground": "#859900"
+                    }
+                },
+                {
+                    "scope": "meta.embedded.line.elixir",
+                    "settings": {
+                        "foreground": "#3befe0"
+                    }
+                },
+                {
+                    "scope": [
+                        "punctuation.definition.map.elixir",
+                        "punctuation.section.scope.elixir"
+                    ],
+                    "settings": {
+                        "foreground": "#91db37"
+                    }
+                },
+                {
+                    "scope": "punctuation.section.embedded.elixir",
+                    "settings": {
+                        "foreground": "#4dbeff"
+                    }
+                },
+                {
+                    "scope": "punctuation.section.array.elixir",
+                    "settings": {
+                        "foreground": "#9682e4"
+                    }
+                },
+                {
+                    "scope": "punctuation.section.function.elixir",
+                    "settings": {
+                        "foreground": "#4dbeff"
+                    }
+                },
+                {
+                    "scope": "constant.numeric.elixir",
+                    "settings": {
+                        "foreground": "#df61d5",
+                    }
+                },
             ]
-        ],
+        },
     },
+    "workbench.colorCustomizations": {
+        "[Solarized Dark]": {
+            "editorBracketHighlight.foreground1": "#4dbeff",
+            "editorBracketHighlight.foreground2": "#e4e411",
+            "editorBracketHighlight.foreground3": "#bd8aff"
+        }
+    },
+    "editor.bracketPairColorization.enabled": false,
+    "editor.language.colorizedBracketPairs": [
+        [
+            "(",
+            ")"
+        ]
+    ],
     "editor.lineHeight": 1.6,
     "workbench.editorAssociations": {
         "*.ms": "hexEditor.hexedit"
@@ -126,4 +127,16 @@
     "git.openRepositoryInParentFolders": "never",
     "editor.formatOnSave": true,
     "editor.inlayHints.enabled": "offUnlessPressed",
+    "[elixir]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.wordBasedSuggestions": "off",
+        "editor.formatOnType": true,
+        "editor.trimAutoWhitespace": false,
+        "editor.snippetSuggestions": "inline",
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "editor.bracketPairColorization.enabled": true,
+    }
 }
